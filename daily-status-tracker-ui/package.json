@@ -1,0 +1,96 @@
+{
+  "name": "daily-status-tracker-ui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.11.5",
+    "antd": "^4.6.2",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest src/pages/ --coverage",
+    "eject": "react-scripts eject",
+    "lint": "eslint --cache --ext .js --ext .jsx . --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": ["lint-staged"]
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "jest src/ --findRelatedTests --bail --coverage"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ],
+    "testRegex": ".+\\.test\\.jsx?$",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "node"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react)/)"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|scss)$": "<rootDir>/src/styleMock.js"
+    },
+
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js"
+    ],
+    "coverageReporters": [
+      "text"
+    ],
+    "resolver": null
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.4",
+    "enzyme-to-json": "^3.5.0",
+    "eslint": "^7.8.1",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.5.0",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "lint-staged": "^10.4.0"
+  }
+}

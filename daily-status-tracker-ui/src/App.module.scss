@@ -1,0 +1,53 @@
+@import "./commonStyle/variables";
+
+:global(.ant-layout).layoutElement {
+  height: 100%;
+  :global {
+    .ant-layout-header,
+    .ant-menu.ant-menu-dark {
+      &.ant-menu-root.d-none {
+        display: none;
+      }
+      .ant-menu-item-selected {
+        background: $hover-background-red;
+        border-top: 4px solid $color-white;
+        line-height: 60px;
+      }
+      .ant-menu-item-active {
+        background: $hover-background-red;
+      }
+      background: $background-red;
+    }
+  }
+  .title {
+    color: $color-white;
+    position: "fixed";
+    z-index: 1;
+    white-space: nowrap;
+  }
+  .contentArea {
+    height: 100%;
+  }
+}
+:global {
+  .ant-menu-dark .ant-menu.ant-menu-sub {
+    background: $background-red;
+    .ant-menu-item-selected {
+      background: $hover-background-red;
+      border-top: 4px solid $color-white;
+      line-height: 60px;
+    }
+    .ant-menu-item-active {
+      background: $hover-background-red;
+    }
+  }
+}
+:global {
+  .ant-form-item-explain {
+    margin-bottom: 10px;
+  }
+}
+:global(.cardTitle .ant-card-head) {
+    text-align: center;
+    font-size: 18px;
+}

@@ -1,0 +1,24 @@
+@media only screen and (min-width: 768px) {
+    .createAccountColumn {
+        min-width: 400px;
+    }
+}
+.createAccountColumn {
+    .formButtons {
+        margin-bottom: 0px;
+    }
+}
+.createAccountContainer{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-height: 88vh;
+    padding: 40px 48px;
+    align-items: center;
+    justify-content: center;
+}
+.registerAccount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

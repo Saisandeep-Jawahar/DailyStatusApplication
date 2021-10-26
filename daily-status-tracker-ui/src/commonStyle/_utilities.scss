@@ -1,0 +1,162 @@
+@import "./variables";
+// padding
+.p-0 {
+  padding: 0px;
+}
+.p-1 {
+  padding: $spacer * 0.25px;
+}
+.p-2 {
+  padding: $spacer * 0.5px;
+}
+.p-3 {
+  padding: $spacer * 1px;
+}
+.p-4 {
+  padding: $spacer * 1.5px;
+}
+.p-5 {
+  padding: $spacer * 3px;
+}
+.p-6 {
+  padding: $spacer * 10px;
+}
+// padding bottom
+.pb-0 {
+  padding-bottom: 0px;
+}
+.pb-1 {
+  padding-bottom: $spacer * 0.25px;
+}
+.pb-2 {
+  padding-bottom: $spacer * 0.5px;
+}
+.pb-3 {
+  padding-bottom: $spacer * 1px;
+}
+.pb-4 {
+  padding-bottom: $spacer * 1.5px;
+}
+.pb-5 {
+  padding-bottom: $spacer * 3px;
+}
+.ml-5 {
+  margin-left: $spacer * 3px;
+}
+// float
+.float-right {
+  float: right;
+}
+
+.font-weight-600{
+  font-weight: 600;
+}
+
+.mtl {
+  margin-top: $spacer * 4px;
+}
+.mtxl{
+  margin-top: 35px;
+}
+.d-none{
+  display: none;
+}
+
+.btn-primary{
+  background: #cc1f20;
+  padding: 4px 8px;
+  border: 2px solid #cc1f20;
+  color: white;
+  width: 100px;
+  border-radius: 2px;
+}
+button.btn-primary:hover{
+  background: white;
+  padding: 4px 8px;
+  border: 2px solid #cc1f20;
+  color: #cc1f20;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 2px;
+}
+.btn-link{
+  color: #cc1f20;
+  background: transparent;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+button.btn-link:hover{
+  cursor: pointer;
+}
+.not-allowed-cursor {
+  cursor: not-allowed;
+}
+// ant-style for button
+button.ant-btn {
+  color: #db6262;
+  background: #fff;
+  border-color: #db6262;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+          box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
+
+button.ant-btn:hover,
+button.ant-btn:focus {
+  background: #fff;
+  color: #cc1f20;
+  border-color: #cc1f20;
+}
+
+button.ant-btn:active {
+  background: #fff;
+  color: #b71b1c;
+  border-color: #b71b1c;
+}
+
+button.ant-btn[disabled],
+button.ant-btn[disabled]:hover,
+button.ant-btn[disabled]:focus,
+button.ant-btn[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  background: #f5f5f5;
+  border-color: #d9d9d9;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+//>>>>>>>>>>>>>>>>>>>>>>>>
+button.ant-btn-primary {
+  color: #fff;
+  background: #cc1f20;
+  border-color: #cc1f20;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+          box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
+
+button.ant-btn-primary:hover,
+button.ant-btn-primary:focus {
+  color: #fff;
+  background: #d64b4c;
+  border-color: #d64b4c;
+}
+
+button.ant-btn-primary:active {
+  color: #fff;
+  background: #b71b1c;
+  border-color: #b71b1c;
+}
+
+button.ant-btn-primary[disabled],
+button.ant-btn-primary[disabled]:hover,
+button.ant-btn-primary[disabled]:focus,
+button.ant-btn-primary[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  background: #f5f5f5;
+  border-color: #d9d9d9;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}

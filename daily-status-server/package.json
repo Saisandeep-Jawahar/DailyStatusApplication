@@ -1,0 +1,49 @@
+{
+  "name": "dailystatusapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --cache --ext .js . --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": [
+        "lint-staged"
+      ]
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "jest src/ --findRelatedTests --bail --coverage"
+    ]
+  },
+  "keywords": [
+    "daily",
+    "status",
+    "app"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "moment": "^2.29.0",
+    "mongoose": "^5.10.5",
+    "swagger-ui-express": "^4.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "eslint": "^7.8.1",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.5.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "nodemon": "^2.0.4"
+  }
+}

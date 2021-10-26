@@ -1,0 +1,25 @@
+.signInContainer{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-height: 88vh;
+    padding: 40px 48px;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 767px){
+        padding: 0px;
+        align-items: stretch;
+        justify-content: space-evenly;
+    }
+    :global(.ant-card){
+        width:300px;
+        @media screen and (max-width: 767px){
+            width: auto;
+        }
+      }
+      .createAccount{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+}
